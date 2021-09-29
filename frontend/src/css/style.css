@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: large;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container {
+  position: relative;
+}
+
+.add-new-task {
+  position: absolute;
+  right: 0;
+  top: -35px;
+  width: 150px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.tasks {
+  margin-top: 50px;
+}
+
+.submit-button {
+  margin-top: 5px;
+  height: 25px;
+}
+
+.hidden {
+  display: none;
+}
+
+.ticket-container {
+  position: relative;
+  margin-top: 5px;
+  border: 1px solid black;
+  min-height: 50px;
+}
+
+.ticket-time {
+  position: absolute;
+  top: 12px;
+  right: 75px;
+}
+
+.add-new-form,
+.edit-form {
+  position: fixed;
+  padding: 10px;
+  width: 250px;
+  top: calc(50% - 150px);
+  left: calc(50% - 125px);
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.ticket-content {
+  margin-left: 50px;
+  margin-top: 13px;
+}
+
+.ticket-name,
+.ticket-description {
+  width: 100%;
+  min-height: 25px;
+}
+
+.ticket-description {
+  margin-top: 10px;
+}
+
+.form-name {
+  text-align: center;
+  font-size: 110%;
+  margin-bottom: 25px;
+}
+
+.edit-delete {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+}
+
+.circle {
+  position: absolute;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.done-circle {
+  left: 10px;
+}
+
+.ticket-container[data-status="true"] > .done-circle {
+  background: url(../img/done.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.edit-circle {
+  right: 40px;
+  background: url(../img/edit.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.delete-circle {
+  right: 10px;
+  background: url(../img/del.png) center center no-repeat;
+  background-size: 100%;
+}
+
+.buttons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.cancel-button,
+.ok-button {
+  height: 30px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.ok-button {
+  width: 40px;
+}
+
+.confirm-delete {
+  position: fixed;
+  padding: 10px;
+  width: 350px;
+  top: calc(50% - 150px);
+  left: calc(50% - 125px);
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.confirm-delete > .buttons {
+  margin-top: 15px;
+}

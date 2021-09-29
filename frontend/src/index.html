@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Helpdesk</title>
+</head>
+
+<body>
+  <div class="container">
+    <button class="add-new-task">Добавить задачу</button>
+    <div class="tasks">
+      <div class="task-container">
+
+      </div>
+      <form class="add-new-form hidden">
+        <div class="form-name">Добавить задачу</div>
+        <label for='name'>Краткое описание</label>
+        <input type="text" class="ticket-name" name="name" placeholder="Здесь краткое описание" required>
+        <label for='description'>Полное описание</label>
+        <input type="text" class="ticket-description" name="description" placeholder="Здесь полное описание" required>
+        <div class="buttons">
+          <button class="cancel-button">Отмена</button>
+          <button class="ok-button submit-button">Ок</button>
+        </div>
+      </form>
+
+      <form class="edit-form hidden">
+        <div class="form-name">Изменить задачу</div>
+        <label for='name'>Краткое описание</label>
+        <input type="text" class="ticket-name" name="name" placeholder="Здесь краткое описание" required>
+        <label for='description'>Полное описание</label>
+        <input type="text" class="ticket-description" name="description" placeholder="Здесь полное описание" required>
+        <div class="buttons">
+          <button class="cancel-button">Отмена</button>
+          <button class="ok-button submit-button">Ок</button>
+        </div>
+      </form>
+
+      <div class="confirm-delete hidden">
+        <h3>Удалить задачу</h3>
+        <div class="confirm-delete-content">Вы уверены в удалении задачи?</div>
+        <div class="buttons">
+          <button class="cancel-button">Отмена</button>
+          <button class="ok-button submit-button">Ок</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>
